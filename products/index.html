@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Heights products</title>
+    <link rel="icon" type="image/png" href="./HeightLogo.png">
 </head>
 <body>
-
-    <h1>Heights products</h1>
-
     <script>
-        console.clear()
-        console.log("STOP!")
-        console.warn("Don't do anything in this console!")
+    console.clear();
+    console.log("STOP!");
+    console.warn("Don't do anything in this console!");
+    document.cookie = "sesion=[Ok]; max-age=60; path=/;";
 
-        document.cookie = "sesion=[Ok]; max-age=60; path=/;"
-    </script>
+    function downloadFile(filePath, fileName) {
+        const fileUrl = './' + filePath;
+
+        fetch(fileUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            })
+            .catch(() => alert('Error!'));
+    }
+</script>
+
+    <center><img src="./HeightLogo.png" alt="Height Logo" class="site-logo"></center>
+    <h1>Heights studios products</h1>
+
 </body>
 </html>
