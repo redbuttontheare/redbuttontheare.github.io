@@ -3,13 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heights</title>
+    <title>Heights Studios</title>
     <link rel="icon" type="image/png" href="./HeightLogo.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        }
+
+        .site-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37,99,235,0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @keyframes float {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
 </head>
 <body>
-    <script>
+
+<script>
     console.clear();
-    console.log("STOP!");
+    console.log("%cSTOP!", "color:red;font-size:40px;font-weight:bold;");
     console.warn("Don't do anything in this console!");
 
     function downloadFile(filePath, fileName) {
@@ -25,15 +110,31 @@
                 link.click();
                 document.body.removeChild(link);
             })
-            .catch(() => alert("Error! can't  download file or zip"));
+            .catch(() => alert("Error! Can't download file."));
     }
 </script>
 
-    <center><img src="./HeightLogo.png" alt="Height Logo" class="site-logo"></center>
-    <center><h1>Heights studios</h1></center>
+<div class="container">
+    <img src="./HeightLogo.png" alt="Height Logo" class="site-logo">
 
-    <a href="./products">Heights studios products</a> <br>
-    <a href="./devs">Heights studios developers</a>
+    <h1>Heights Studios</h1>
+
+    <p>Creating games, software and innovative projects.</p>
+
+    <div class="buttons">
+        <a href="./products" class="btn">
+            Products
+        </a>
+
+        <a href="./devs" class="btn">
+            Developers
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 Heights Studios. All rights reserved.
+    </div>
+</div>
+
 </body>
 </html>
-
