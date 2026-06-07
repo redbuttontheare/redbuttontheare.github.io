@@ -7,7 +7,7 @@ Heights studios site!
 
 ### We developers at: https://redbuttontheare.github.io/devs
 
-## Current version: v11.1
+## Current version: v12
 
 ## Verions
-v1.0 v2.0 v3.0 v4.0 v5.0 v6 v7 v8 v9 v10 v10.3 v11 v11.1
+v1.0 v2.0 v3.0 v4.0 v5.0 v6 v7 v8 v9 v10 v10.3 v11 v11.1 v12
