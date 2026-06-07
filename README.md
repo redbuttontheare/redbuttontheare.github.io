@@ -5,7 +5,7 @@ Heights studios site!
 
 ### You can also download products at: https://redbuttontheare.github.io/products
 
-### We developers at: https:redbuttontheare.github.io/devs
+### We developers at: https://redbuttontheare.github.io/devs
 
 ## Current version: v11.1
 
