@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heights</title>
-    <link rel="icon" type="image/png" href="./HeightLogo.png">
+    <!-- Виправлено шлях до іконки вкладки, оскільки вона лежить у папці site -->
+    <link rel="icon" type="image/png" href="./site/HeightLogo.png">
     <style>
         /* Стилі для контейнера, щоб вирівняти елементи по центру */
         .image-container {
@@ -15,20 +16,20 @@
             margin: 20px auto;
         }
 
-/* Стилі для самого зображення (за потреби змініть розмір) */
-            .site-logo {
+        /* ТУТ БУЛА ПОМИЛКА (коментар закрито правильно: */) */
+        .site-logo {
             max-width: 150px; /* Максимальна ширина картинки */
             height: auto;
         }
 
-/* Стилі для створення прямокутника */
-    .orange-rectangle {
+        /* Стилі для створення прямокутника */
+        .orange-rectangle {
             width: 200px;       /* Ширина прямокутника */
             height: 50px;       /* Висота прямокутника */
             background-color: #ff9800; /* Помаранчевий колір */
-            border-radius: 4px; /* Легке закруглення кутів (можна видалити) */
+            border-radius: 4px; /* Легке закруглення кутів */
         }
-</style>
+    </style>
 </head>
 <body>
     <script>
@@ -40,13 +41,13 @@
     </script>
 
     <!-- Контейнер, який об'єднує картинку та помаранчевий прямокутник -->
-<div class="image-container">
-    <!-- Ваше зображення з правильним шляхом до папки site -->
-    <img src="./site/HeightLogo.png" alt="Height Logo" class="site-logo">
-    
-    <!-- Помаранчевий прямокутник під зображенням -->
-    <div class="orange-rectangle"></div>
-</div>
+    <div class="image-container">
+        <!-- Ваше зображення з правильним шляхом до папки site -->
+        <img src="./site/HeightLogo.png" alt="Height Logo" class="site-logo">
+        
+        <!-- Помаранчевий прямокутник під зображенням -->
+        <div class="orange-rectangle"></div>
+    </div>
 
 </body>
 </html>
