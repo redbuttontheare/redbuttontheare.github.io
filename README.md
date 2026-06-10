@@ -6,5 +6,3 @@ Heights studios site!
 ### You can also download products at: https://redbuttontheare.github.io/products
 
 ### We developers at: https://redbuttontheare.github.io/devs
-
-### Heights studios
