@@ -92,7 +92,8 @@
             margin-bottom:15px;
         }
 
-        .download-btn{
+        .product-btn{
+            display:inline-block;
             border:none;
             color:white;
             cursor:pointer;
@@ -101,9 +102,10 @@
             font-weight:bold;
             background:linear-gradient(135deg,#2563eb,#1d4ed8);
             transition:0.3s;
+            text-decoration:none;
         }
 
-        .download-btn:hover{
+        .product-btn:hover{
             transform:scale(1.05);
             box-shadow:0 0 20px rgba(37,99,235,0.5);
         }
@@ -163,17 +165,17 @@
     <h2 class="products-title">Products</h2>
 
     <div class="product-card">
-        <h3>  lightLang 7</h3>
+        <h3>💻 lightLang 7</h3>
         <p>Programming language created by Heights Studios.</p>
 
-        <a href="https://redbuttontheare.github.io/lightLang">Visit to product page</a>
+        <a href="https://redbuttontheare.github.io/lightLang" class="product-btn">Visit product page</a>
     </div>
 
     <div class="product-card">
         <h3>🎨 Simple Pixel Editor</h3>
         <p>Simple editor for creating pixel art and sprites.</p>
 
-        <button class="download-btn"
+        <button class="product-btn"
             onclick="downloadFile('PixelEditor.zip','PixelEditor.zip')">
             Download
         </button>
