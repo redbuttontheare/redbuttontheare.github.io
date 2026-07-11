@@ -2,7 +2,7 @@
 
 **Version 1.0**
 
-Copyright (c) [year] [author's name]
+Copyright (c) 2025-2030 redbuttontheare
 
 ## Preamble
 
@@ -49,3 +49,4 @@ liable for any damages arising from the use of this code.
 
 *This license is free for anyone to use who wishes to protect their
 code with terms of openness and author attribution.*
+*The original license page is: https://redbuttontheare.github.io/fcc/*
