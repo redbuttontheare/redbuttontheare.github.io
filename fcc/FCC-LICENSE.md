@@ -2,7 +2,7 @@
 
 **Version 1.0**
 
-Copyright (c) [year] [author's name]
+Copyright (c) <year> <author>
 
 ## Preamble
 
